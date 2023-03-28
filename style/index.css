@@ -1,0 +1,363 @@
+/* Colores que usaremos en el codigo */
+:root {
+    --softOrange: hsl(35, 77%, 62%);
+    --softRed: hsl(5, 85%, 63%);
+    --offWhite: hsl(36, 100%, 99%);
+    --grayishBlue: hsl(231, 11%, 64%);
+    --darkGrayishBlue: hsl(236, 13%, 42%);
+    --veryDarkBlue: hsl(240, 100%, 5%);
+    --colorLinks: rgb(123, 165, 151);
+}
+/* Estilos por defectos */
+* {
+    font-family:Arial, sans-serif;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Clase que reutilizamos para esconder y mostrar elementos */
+.ocultar-elementos {
+    display: none;
+}
+
+.mostrar-elementos {
+    display: flex;
+}
+
+/* CONTENEDOR DE TODO EL PROYECTO */
+.container {
+    margin: auto;
+    width: 100%;
+
+}
+
+/* HEADER */
+.header-container .header {
+    position: fixed;
+
+    width: 100%;
+    top: 0;
+    padding: 10px;
+
+    background-color: rgb(235, 230, 230);
+
+}
+
+/* MENU PC */
+.header-container .header .menu-pc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 50px;
+
+    
+}
+
+.header-container .header .menu-pc .title-header {
+    font-size: 1.1em;
+}
+
+.header-container .header .menu-pc .lista-header {
+    display: flex;
+    align-items: center;
+    
+}
+
+.header-container .header .menu-pc .lista-header .ul-lista{
+    display: flex;
+    list-style: none;
+}
+
+.header-container .header .menu-pc .lista-header .ul-lista .li-ul {
+    padding: 8px;
+    margin-right: 20px;
+}
+
+.header-container .header .menu-pc .lista-header .ul-lista  .li-ul .a-li__ul {
+    text-decoration: none;
+
+    font-size: .8em;
+
+
+    color: var(--darkGrayishBlue);
+}
+
+.header-container .header .menu-pc .lista-header .ul-lista  .li-ul .a-li__ul:hover {
+    text-decoration: underline;
+
+    font-size: 1em;
+
+
+    color: var(--colorLinks);
+}
+
+.header-container .header .menu-pc .lista-header 
+.menu-open__img-ul__lista,
+.menu-close__img-ul__lista {
+    cursor: pointer;
+    display: none;
+
+    width: 2em;
+    height: 1em;
+    margin-right: 10px;
+
+}
+
+
+/* MENU MOBILE */
+.header-container .header  .menu-mobile {
+    border: 1px solid rgb(178, 172, 172);
+    position: absolute;
+    margin: auto;
+
+    width: 100%;
+    z-index: 100;
+    right: 0;
+
+
+    background-color: #ffffff;
+
+}
+
+.header-container .header  .menu-mobile .ul-menu {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.header-container .header  .menu-mobile .ul-menu .li-ul {
+    padding: 20px;
+    
+}
+
+.header-container .header  .menu-mobile .ul-menu .li-ul .a-li__ul {
+    text-decoration: none;
+    
+
+    color: black;
+}
+
+.header-container .header  .menu-mobile .ul-menu .li-ul .a-li__ul:hover {
+    text-decoration: underline;
+
+    font-size: 1.2em;
+
+
+    color: var(--colorLinks);
+}
+
+/* MAIN */
+.main-container  .main{
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+}
+
+/* ARTICLE 1 */
+.main .article-1__section-1 img {
+    object-fit: cover;
+
+    height: 200px;
+    width: 100%;
+
+}
+
+/* ARTICLE 2 */
+.main .article-2__section-1 {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+
+}
+
+/* CARD 1 DEL ARTICLE 2 */
+
+.main .article-2__section-1 .card-1__article-2 .h2-card__1-main {
+    font-size: 1.8em;
+    height: 100%;
+}
+
+
+/* CARD 2 DEL ARTICLE 2 */
+.main .article-2__section-1 .card-2__article-2 .p-card__2-main {
+    font-weight:normal;
+
+    font-size: .75em;
+    margin-bottom: 10px;
+
+
+    color: var(--darkGrayishBlue);
+}
+
+.main .article-2__section-1 .card-2__article-2 .button-card__2-main {
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+
+    padding: 12px 30px;
+    letter-spacing: 2.2px;
+    font-size: .8em;
+    
+    
+    color: white;
+    background: var(--softRed);
+}
+
+.main .article-2__section-1 .card-2__article-2 .button-card__2-main:hover {
+    padding: 10px 31px;
+
+    color: var(--colorLinks);
+}
+
+/* ASIDE */
+.aside-container{
+    height: 100%;
+
+    background-color: var(--veryDarkBlue);
+}
+
+.aside-container .aside {
+    padding: 15px;
+}
+
+.aside-container .aside .h3-aside {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+
+    color: var(--softOrange);
+    
+}
+
+.aside-container .aside .h4-card__1-aside, .h4-card__2-aside, .h4-card__3-aside {
+    font-size: .75em;
+    margin-bottom: 4px;
+
+    color: var(--offWhite);;
+}
+
+.aside-container .aside .h5-card__1-aside, .h5-card__2-aside, .h5-card__3-aside {
+    font-size: .6em;
+
+    color: var(--darkGrayishBlue);
+}
+
+.hr-aside {
+    opacity: 0.2;
+    margin: 20px 0;
+}
+
+/* FOOTER */
+
+.footer-container .footer {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+/* Declaramos el estilo del grid a los 3 elementos */
+.footer-container .footer 
+.card-1__footer,
+.card-2__footer,
+.card-3__footer {
+    display: grid;
+
+    grid-template-columns: 1.5fr 2.5fr;
+    gap: 10px;
+}
+
+/* Declaramos el estilo de la imagen a los 3 elementos */
+
+.footer-container .footer 
+.card-1__footer .img-1__card-1__footer .img,
+.card-2__footer .img-2__card-2__footer .img,
+.card-3__footer .img-3__card-3__footer .img {
+    object-fit: cover;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Declaramos el estilo del numero a los 3 elementos del footer */
+.footer-container .footer
+.card-1__footer .texto-1__card-1 .h4-card-1__footer,
+.card-2__footer .texto-2__card-2 .h4-card-2__footer,
+.card-3__footer .texto-3__card-3 .h4-card-3__footer {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+
+    color: var(--grayishBlue);
+}
+/* Declaramos el estilo del subtitulo a los 3 elementos del footer */
+.footer-container .footer
+.card-1__footer .texto-1__card-1 .h5-card-1__footer,
+.card-2__footer .texto-2__card-2 .h5-card-2__footer,
+.card-3__footer .texto-3__card-3 .h5-card-3__footer {
+    font-size: .8em;
+    margin-bottom: 10px;
+
+    color: var(--veryDarkBlue);
+}
+/* Declaramos el estilo del textlo a los 3 elementos del footer */
+.footer-container .footer
+.card-1__footer .texto-1__card-1 .p-card-1__footer,
+.card-2__footer .texto-2__card-2 .p-card-2__footer,
+.card-3__footer .texto-3__card-3 .p-card-3__footer {
+    font-size: .6em;
+
+    color: var(--grayishBlue);
+}
+
+/* Si llega a 500px  */
+@media screen and (max-width:500px){
+    /* Aca escondemos el menu normal */
+    .header-container .header .menu-pc  .lista-header .ul-lista{
+        display: none;
+    }
+
+    .header-container .header .menu-pc .lista-header .menu-open__img-ul__lista {
+    display: flex;
+}
+
+    
+
+    /* Aca mostramos el menu de barras */
+    
+}
+
+@media screen and (max-width:450px) {
+     
+.main-container  .main{
+    display: grid;
+
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+
+/* MAIN */
+.main .article-2__section-1  {
+    grid-template-columns: 1fr;
+}
+
+/* FOOTER */
+.footer-container .footer {
+    grid-template-columns: 1fr;
+}
+}
+

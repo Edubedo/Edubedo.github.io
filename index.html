@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <!-- Js -->
+  <script src="./script/index.js" defer></script>
+
+  <!-- Css -->
+  <link rel="stylesheet" href="./style/index.css">
+  <title>Pagina Web</title> 
+</head>
+<body>
+  <div class="container">
+      
+    <div class="header-container">
+      <header class="header">
+        <div class="menu-pc" id="menuPc">
+        
+          <!-- TITULO HEADER -->
+          <div class="title-header">
+            <h1 class="h1-title__header">W.</h1>
+          </div>
+      
+          <!-- LISTA HEADER -->
+          <div class="lista-header">
+            <ul class="ul-lista" id="listaHeader">
+              <li class="li-ul">
+                <a href="#" class="a-li__ul">
+                  Home
+                </a>
+              </li>
+              <li class="li-ul">
+                <a href="#" class="a-li__ul">
+                  New
+                </a>
+              </li>
+              <li class="li-ul">
+                <a href="#" class="a-li__ul">
+                  Popular
+                </a>
+              </li>
+              <li class="li-ul">
+                <a href="#" class="a-li__ul">
+                  Trending
+                </a>
+              </li>
+              <li class="li-ul">
+                <a href="#" class="a-li__ul">
+                  Categories
+                </a>
+              </li>
+            </ul>
+            <div id="menuAgrupado">
+              <img src="./assets/images/icon-menu.svg" alt="" class="menu-open__img-ul__lista" id="menuOpenHeader" dataMenu="open">
+              <img src="./assets/images/icon-menu-close.svg" alt="" class="menu-close__img-ul__lista" id="menuCloseHeader" dataMenu="close">
+            </div>
+          </div>
+      </div>
+
+        <!-- MENU MOBILE -->
+        <div class="menu-mobile ocultar-elementos" id="menuMobile">
+            <ul class="ul-menu">
+              <li class="li-ul">
+                <a href="#" class="a-li__ul">
+                  Home
+                </a>
+              </li>
+              <li class="li-ul">
+                <a href="#" class="a-li__ul">
+                  New
+                </a>
+              </li>
+              <li class="li-ul">
+                <a href="#" class="a-li__ul">
+                  Popular
+                </a>
+              </li>
+              <li class="li-ul">
+                <a href="#" class="a-li__ul">
+                  Trending
+                </a>
+              </li>
+              <li class="li-ul">
+                <a href="#" class="a-li__ul">
+                  Categories
+                </a>
+              </li>
+            </ul>
+        </div>
+        
+      </header>
+    </div>
+    
+    <!-- MAIN -->
+    <div class="main-container">
+      <main class="main">
+        <section class="section-1__container">
+  
+          <!-- Article con una imagen -->
+          <article class="article-1__section-1">
+            <img src="./assets/images/image-web-3-desktop.jpg" alt="Figuritas" class="img-section" title="Figuras">
+          </article>
+  
+          <!-- Article con 2 cards para separar con grid -->
+          <article class="article-2__section-1">
+            <div class="card-1__article-2">
+              <h2 class="h2-card__1-main">
+                The Bright Future of Web 3.0?
+              </h2>
+            </div>
+      
+            <div class="card-2__article-2">
+              <p class="p-card__2-main">
+                We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                But is it really fulfilling its promise?
+              </p>
+        
+              <button class="button-card__2-main">
+                READ MORE
+              </button>
+            </div>
+          </article>
+  
+        </section>
+  
+        <div class="aside-container">
+          <aside class="aside">
+            <div class="div-aside__container">
+              <!-- TITLE ASIDE -->
+            <h3 class="h3-aside">
+              New
+            </h3>
+      
+            <!-- CARD 1 ASIDE -->
+            <div class="card-1__aside">
+              <h4 class="h4-card__1-aside">
+                Hydrogen VS Electric Cars
+              </h4>
+      
+              <h5 class="h5-card__1-aside">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </h5>
+            </div>
+            <hr class="hr-aside">
+            <!-- CARD 2 ASIDE -->
+            <div class="card-2__aside">
+              <h4 class="h4-card__2-aside">
+                The Downsides of AI Artistry
+              </h4>
+      
+              <h5 class="h5-card__2-aside">
+                What are the possible adverse effects of on-demand AI image generation?
+              </h5>
+            </div>
+            <hr class="hr-aside">
+            <!-- CARD 3 ASIDE -->
+            <div class="card-3__aside">
+              <h4 class="h4-card__3-aside">
+                Is VC Funding Drying Up?
+              </h4>
+      
+              <h5 class="h5-card__3-aside">
+                Private funding by VC firms is down 50% YOY. We take a look at what that means.
+              </h5>
+            </div>
+            </div>
+            </aside>
+        </div>
+      </main>
+    </div>
+    
+
+    <div class="footer-container">
+      <footer class="footer">
+        <!-- CARD 1 -->
+        <div class="card-1__footer">
+          <!-- IMAGEN -->
+          <div class="img-1__card-1__footer">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="#" class="img">
+          </div>
+          <!-- LO METEMOS EN CLASE PARA QUE NO SE ROMPA CON GRID-->
+          <div class="texto-1__card-1">
+            <h4 class="h4-card-1__footer">
+              01
+            </h4>
+            <h5 class="h5-card-1__footer">
+              Reviving Retro PCs
+            </h5>
+            <p class="p-card-1__footer">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+  
+        <!-- CARD 2 -->
+        <div class="card-2__footer">
+          <!-- IMAGEN -->
+          <div class="img-2__card-2__footer">
+            <img src="./assets/images/image-top-laptops.jpg" alt="#" class="img">
+          </div>
+  
+          <!-- TEXTO -->
+          <div class="texto-2__card-2">
+            <h4 class="h4-card-2__footer">
+              02
+            </h4>
+            <h5 class="h5-card-2__footer">
+              Top 10 Laptops of 2022
+            </h5>
+            <p class="p-card-2__footer">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </div>
+     
+      
+      <!-- CARD 3 -->
+      <div class="card-3__footer">
+        <div class="img-3__card-3__footer">
+          <img src="./assets/images/image-gaming-growth.jpg" alt="#" class="img">
+        </div>
+        <div class="texto-3__card-3">
+          <h4 class="h4-card-3__footer">
+            03
+          </h4>
+          <h5 class="h5-card-3__footer">
+            The Growth of Gaming
+          </h5>
+          <p class="p-card-3__footer">
+            How the pandemic has sparked fresh opportunities.
+          </p>
+        </div>
+      </div>
+      </footer>
+    </div>
+    
+  </div>
+</body>
+</html>
