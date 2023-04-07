@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Bob Esponja</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <script src="script/script.js" defer></script>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/0dbcb04c86.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <!-- CONTENEDOR -->
+    <div class="container">
+        <div class="header-container">
+            <header class="header">
+                <div class="tema">
+                    <h1>TEST DE BOB ESPONJA</h1>
+                    <img src="img/bob.jfif" alt="Bob esponja">
+                </div>
+
+                <div class="logo">
+                    <a href="https://github.com/Ezescobedo27" target="_blank">
+                        <h2>Edubedo</h2>
+                        <img src="img/logo.png" alt="Edubedo">
+                    </a>
+                </div>
+            </header>
+        </div>
+
+        <div class="container-menu" id="menu">
+            <div class="menu" >
+                <h3>DALE CLICK A "EMPEZAR TEST" PARA SABER QUE PERSONAJE DE BOB ESPONJA ERES</h3>
+                <img src="img/todobob.webp.crdownload" alt="Bob Esponja">
+                <button class="empezar" id="empezarTest">Empezar test</button>
+            </div>
+        </div>
+
+        <div class="container-preguntas" id="preguntas">
+            <form action="#" class="form_pregunta" id="formulario">
+                <!-- PREGUNTA 1 -->
+                <h4 class="h4_pregunta">¿Qué color te gusta mas?</h4>
+                <section id="p0">
+                <label for=""> <input type="radio" value="1" name="p0">Rojo</label>
+                <label for=""> <input type="radio" value="2" name="p0" >Azul</label>
+                <label for=""> <input type="radio" value="3" name="p0" >Negro</label>
+                <label for=""> <input type="radio" value="4" name="p0" >Blanco</label>
+                </section>
+                <!-- PREGUNTA 2 -->
+                <h4 class="h4_pregunta">¿Vives en una piña debajo del mar</h4>
+                <section id="p1">
+                    <label for=""> <input type="radio" value="1" name="p1" >Si</label>
+                    <label for=""> <input type="radio" value="2" name="p1" >No</label>
+                    </section>
+                    <!-- PREGUNTA 3 -->
+                    <h4 class="h4_pregunta">¿Eres tacaño?</h4>
+                <section id="p2">
+                    <label for=""> <input type="radio" value="1" name="p2" >Si</label>
+                    <label for=""> <input type="radio" value="2" name="p2" >No</label>
+                    </section>
+                    <!-- PREGUNTA 4 -->
+                    <h4 class="h4_pregunta">¿Tocas el clarinete?</h4>
+                <section id="p3">
+                    <label for=""> <input type="radio" value="1" name="p3" >Si</label>
+                    <label for=""> <input type="radio" value="2" name="p3" >No</label>
+                    </section>
+                    <!-- PREGUNTA 5 -->
+                    <h4 class="h4_pregunta">¿Le caes mal a tus "amigos"?</h4>
+                <section id="p4">
+                    <label for=""> <input type="radio" value="1" name="p4" >Si</label>
+                    <label for=""> <input type="radio" value="2" name="p4" >No</label>
+                    </section>
+                    <!-- PREGUNTA 6 -->
+                    <h4 class="h4_pregunta">¿Tienes asma?</h4>
+                <section id="p5">
+                    <label for=""> <input type="radio" value="1" name="p5" >Si</label>
+                    <label for=""> <input type="radio" value="2" name="p5" >No</label>
+                    </section>
+                    <!-- PREGUNTA 7 -->
+                    <h4 class="h4_pregunta">¿Haz intentado robarte una formula secreta?</h4>
+                <section id="p6">
+                    <label for=""> <input type="radio" value="1" name="p6" >Si</label>
+                    <label for=""> <input type="radio" value="2" name="p6" >No</label>
+                    </section>
+                    <!-- PREGUNTA 8 -->
+                    <h4 class="h4_pregunta">¿Eres un caracol?</h4>
+                <section id="p7">
+                    <label for=""> <input type="radio" value="1" name="p7" >Si</label>
+                    <label for=""> <input type="radio" value="2" name="p7" >No</label>
+                    </section>
+                    <!-- PREGUNTA 9 -->
+                    <h4 class="h4_pregunta">¿Qué youtuber te gusta mas?</h4>
+                <section id="p8"> 
+                    <label for=""> <input type="radio" value="1" name="p8" >Yolo</label>
+                    <label for=""> <input type="radio" value="2" name="p8" >Yair17</label>
+                    <label for=""> <input type="radio" value="3" name="p8" >Antrax</label>
+                    <label for=""> <input type="radio" value="4" name="p8" >Donato</label>
+                </section>
+                    <!-- PREGUNTA 10 -->
+                    <h4 class="h4_pregunta">¿Eres racista?</h4>
+                <section id="p9">
+                    <label for=""> <input type="radio" value="1" name="p9" >Si</label>
+                    <label for=""> <input type="radio" value="2" name="p9" >No</label>
+                </section>
+                <button id="enviarRespuestas">ENVIAR</button>
+            </form>
+        </div>
+
+        <div class="container-mostar__personaje" id="mostrarPersonaje">
+            <div class="mostrar-personaje">
+                <h5 class="h5-mostrar__personaje">Tu personaje es:</h5>
+                <img src="img/logo.png" alt="personaje" id="imgPersonaje" class="img-mostrar__personaje">
+                <p class="p-mostrar__personaje" id="nombrePersonaje">Ninguno(Llena los campos)</p>
+                <button id="volverIntentar">Volver a intentar</button>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
