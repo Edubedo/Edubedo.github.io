@@ -124,6 +124,14 @@
 
 }
 
+.container .menu button:hover{
+    background-color: rgb(226, 212, 9);
+    color: white    ;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 30px;
+}
+
 /* Animacion que usamos para ir desapareciendo las diferentes clases */
 .ocultarLento {
     animation: ocultarLento 3s ease forwards;
